@@ -27,6 +27,12 @@ $loginAs = function ($role) {
         'student' => \App\Models\User::where('email', 'student@mail.com')->first(),
         default => \App\Models\User::where('email', 'admin@mail.com')->first()
     };
+
+    \Illuminate\Support\Facades\Auth::login($user);
+
+    Session::regenerate();
+
+    $this->redirectIntended(default: route('dashboard', absolute: false), navigate: true);
 }
 
 ?>
