@@ -11,7 +11,7 @@
         "laravel/tinker": "^2.9",
         "livewire/livewire": "^3.4",
         "livewire/volt": "^1.0",
-        "mbsoft31/rewards": "^0.0.1",
+        "mbsoft31/rewards": "*",
         "spatie/laravel-permission": "^6.10"
     },
     "require-dev": {
